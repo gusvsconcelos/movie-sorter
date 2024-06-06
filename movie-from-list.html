@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorteador de Filmes</title>
+    <link rel="stylesheet" href="styles/list.css" />
+  </head>
+  <body>
+    <div id="container">
+      <nav>
+        <a id="random" href="random-movie.html">
+          <p>SORTEAR FILME ALEATÓRIO</p>
+        </a>
+        <a id="list" href="index.html">
+          <p>SORTEAR FILME DE UMA LISTA</p>
+        </a>
+      </nav>
+
+      <main>
+        <input
+          type="text"
+          id="movieName"
+          name="movieName"
+          placeholder="Nome do filme"
+          required
+        />
+        <input
+          type="submit"
+          id="submit"
+          onclick="addMovie()"
+          value="Adicionar"
+        />
+
+        <select id="movieList" size="10"></select>
+        <button class="button" id="sortMovie" onclick="sortMovie()">
+          Sortear filme da lista
+        </button>
+        <p id="result"></p>
+
+        <div class="loader"></div>
+      </main>
+    </div>
+
+    <script src="scripts/movie-from-list.js"></script>
+    <script src="scripts/loading-list.js"></script>
+  </body>
+</html>

@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sorteador de Filmes</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/random.css" />
   </head>
   <body>
     <div id="container">
       <nav>
-        <a id="random" href="random-movie.html">
+        <a id="random" href="index.html">
           <p>SORTEAR FILME ALEATÓRIO</p>
         </a>
         <a id="list" href="movie-from-list.html">
@@ -18,8 +18,20 @@
       </nav>
 
       <main>
-        <h1>SORTEADOR DE FILMES</h1>
+        <input
+          type="submit"
+          class="button"
+          onclick="displayMovie()"
+          value="SORTEAR"
+        />
+        <p class="content" id="movie"></p>
+        <img class="content" id="movieCover" />
       </main>
+
+      <div class="loader"></div>
     </div>
+
+    <script src="scripts/random-movie.js"></script>
+    <script src="scripts/loading-random.js"></script>
   </body>
 </html>

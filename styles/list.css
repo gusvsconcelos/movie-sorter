@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import "colorpallete.css";
+
+body {
+  height: 98vh;
+  background-color: var(--background);
+  color: var(--normaltext);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  position: absolute;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--background2);
+}
+
+a#random {
+  position: absolute;
+  top: -51px;
+  left: 0;
+  width: 50%;
+  background-color: var(--randomtab);
+  border-radius: 14px 0 0 0;
+}
+
+a#list {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  height: 60px;
+  width: 50%;
+  background-color: var(--listtab);
+  border-radius: 0 14px 0 0;
+}
+
+a#random:hover {
+  top: -60px;
+  height: 60px;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 520px;
+  padding: 16px;
+  border-radius: 0 0 14px 14px;
+  background: var(--background2);
+}
+
+#movieName {
+  width: 69%;
+  padding: 4px;
+  margin: 10px 6px 14px 0;
+  padding: 6px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--movieTitle);
+  background-color: var(--foreground);
+}
+
+#movieList {
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: 120px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  overflow-y: auto;
+  font-size: 16px;
+  color: var(--movieTitle);
+  background-color: var(--foreground);
+}
+
+#submit {
+  width: 16%;
+  height: 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--listtab);
+  color: var(--background2);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#submit:active {
+  box-shadow: inset 0px 0px 2px black;
+}
+
+#sortMovie {
+  width: 85%;
+  height: 40px;
+  margin: 22px 0 0 0;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--listtab);
+  color: var(--background2);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#sortMovie:active {
+  box-shadow: inset 0px 0px 2px black;
+}
+
+#result {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 400px;
+  padding: 14px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--movieTitle);
+  background-color: var(--foreground);
+}
+
+.loader {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 20px;
+  -webkit-mask: radial-gradient(circle closest-side, #000 94%, #0000) left/20%
+    100%;
+  background: linear-gradient(var(--listtab) 0 0) left/0% 100% no-repeat
+    var(--randomtab);
+  animation: none;
+  display: none;
+}
+@keyframes l17 {
+  100% {
+    background-size: 120% 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #container {
+    max-width: 90%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 10vw;
+  }
+
+  a {
+    font-size: 4vw;
+  }
+
+  a#list {
+    height: 80px;
+  }
+
+  a#random {
+    height: 71px;
+  }
+
+  a#random:hover {
+    height: 80px;
+  }
+
+  #movieName {
+    margin-top: 30px;
+    font-size: 4vw;
+  }
+
+  #submit {
+    width: 20vw;
+    font-size: 3.3vw;
+  }
+
+  #movieList {
+    width: 88vw;
+  }
+
+  #result {
+    width: 80vw;
+    font-size: 5vw;
+  }
+}
