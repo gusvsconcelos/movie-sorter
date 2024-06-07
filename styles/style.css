@@ -1,70 +1,117 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import "colorpallete.css";
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  color: var(--normaltext);
-  background-color: var(--background);
+@media (min-width: 500px) {
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    color: var(--normaltext);
+    background-color: var(--background);
+  }
+
+  #container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 25px;
+    width: 430px;
+    height: 480px;
+    padding: 16px;
+    border-radius: 0 0 14px 14px;
+    background: var(--background2) url("/covers/undefined.png") no-repeat center /
+      50%;
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: 48px;
+    color: var(--foreground);
+    margin: 60px;
+  }
+
+  a {
+    position: absolute;
+    top: -8%;
+    width: 50%;
+    height: 10%;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--background2);
+  }
+
+  a#random {
+    left: 0;
+    background-color: var(--randomtab);
+    border-radius: 14px 0 0 0;
+  }
+
+  a#list {
+    left: 50%;
+    background-color: var(--listtab);
+    border-radius: 0 14px 0 0;
+  }
+
+  a#random:hover,
+  a#list:hover {
+    top: -10%;
+    height: 12%;
+  }
 }
 
-#container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 25px;
-  width: 430px;
-  height: 480px;
-  padding: 16px;
-  border-radius: 0 0 14px 14px;
-  background: var(--background2) url("/covers/undefined.png") no-repeat center /
-    50%;
-}
+@media (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-h1 {
-  font-weight: 900;
-  font-size: 48px;
-  color: var(--foreground);
-  margin: 60px;
-}
+  body {
+    height: 100vh;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+  }
 
-a {
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 900;
-  color: var(--background2);
-}
+  #container {
+    height: 100%;
+    width: 100%;
+    background: var(--background2) url("/covers/undefined.png") no-repeat center /
+      65%;
+  }
 
-a#random {
-  position: absolute;
-  top: -8%;
-  left: 0;
-  width: 50%;
-  height: 10%;
-  background-color: var(--randomtab);
-  border-radius: 14px 0 0 0;
-}
+  h1 {
+    position: absolute;
+    top: 20%;
+    margin: 0 16px 0 16px;
+    font-weight: 900;
+    font-size: 3em;
+    color: var(--foreground);
+  }
 
-a#list {
-  position: absolute;
-  top: -8%;
-  left: 50%;
-  width: 50%;
-  height: 10%;
-  background-color: var(--listtab);
-  border-radius: 0 14px 0 0;
-}
+  a {
+    text-decoration: none;
+    color: var(--background2);
+  }
 
-a#random:hover {
-  top: -10%;
-  height: 12%;
-}
+  a > p {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    padding: 10px 0 10px 0;
+    font-size: 1em;
+    font-weight: 900;
+  }
 
-a#list:hover {
-  top: -10%;
-  height: 12%;
+  a#random > p {
+    left: 0;
+    background-color: var(--randomtab);
+  }
+
+  a#list > p {
+    left: 50%;
+    background-color: var(--listtab);
+  }
 }

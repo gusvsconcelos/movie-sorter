@@ -10,11 +10,19 @@ button.addEventListener("click", () => {
     loader.classList.add("active");
     movieSorted.style.display = "none";
 
-    setTimeout(() => {
-      loader.classList.remove("active");
-      loader.style.display = "none";
-      movieSorted.style.display = "block";
-    }, 3000);
+    if (movieSorted.innerHTML === "Lista vazia") {
+      setTimeout(() => {
+        loader.classList.remove("active");
+        loader.style.display = "none";
+        movieSorted.style.display = "block";
+      }, 1000);
+    } else {
+      setTimeout(() => {
+        loader.classList.remove("active");
+        loader.style.display = "none";
+        movieSorted.style.display = "block";
+      }, 3000);
+    }
   } else {
     loader.style.display = "none";
     loader.style.animation = "none";

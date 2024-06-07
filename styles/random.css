@@ -2,52 +2,54 @@
 @import "colorpallete.css";
 @import "style.css";
 
-#container {
-  background-position: center 20%;
-}
+@media (min-width: 500px) {
+  #container {
+    background-position: center 20%;
+  }
 
-a#random {
-  top: -10%;
-  height: 12%;
-}
+  a#random {
+    top: -10%;
+    height: 12%;
+  }
 
-.button {
-  width: 420px;
-  height: 50px;
-  margin: 12px;
-  border: none;
-  border-radius: 10px;
-  background-color: var(--randomtab);
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
-  color: var(--background2);
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-}
+  .button {
+    width: 420px;
+    height: 50px;
+    margin: 12px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--randomtab);
+    color: var(--background2);
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+  }
 
-.button:active {
-  width: 410px;
-  height: 48px;
-  font-size: 17px;
-  box-shadow: inset 0px 0px 2px black;
-}
+  .button:active {
+    width: 410px;
+    height: 48px;
+    font-size: 17px;
+    box-shadow: inset 0px 0px 2px black;
+  }
 
-#movieCover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 45%;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
-}
+  #movieCover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  }
 
-#movie {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 18px;
-  color: var(--movieTitle);
+  #movie {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    color: var(--movieTitle);
+  }
 }
 
 .loader {
@@ -64,6 +66,7 @@ a#random {
   animation: none;
   display: none;
 }
+
 @keyframes l17 {
   100% {
     background-size: 120% 100%;
@@ -72,4 +75,51 @@ a#random {
 
 .content {
   display: none;
+}
+
+@media (max-width: 500px) {
+  a#random > p {
+    z-index: 7;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .button {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 310px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--randomtab);
+    color: var(--background2);
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+  }
+
+  .button:active {
+    box-shadow: inset 0px 0px 4px black;
+    font-size: 0.98em;
+  }
+
+  #movieCover {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #movie {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    color: var(--movieTitle);
+  }
 }
