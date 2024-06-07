@@ -2,6 +2,9 @@
 @import "colorpallete.css";
 
 body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   text-align: center;
   color: var(--normaltext);
   background-color: var(--background);
@@ -12,9 +15,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 35%;
-  height: 70%;
-  margin: auto;
+  /* margin-top: 80px; */
+  width: 450px;
+  height: 500px;
   padding: 16px;
   border-radius: 0 0 14px 14px;
   background: var(--background2) url("/covers/undefined.png") no-repeat center /
@@ -24,7 +27,7 @@ body {
 h1 {
   font-family: "Raleway";
   font-weight: 900;
-  font-size: 3vw;
+  font-size: 48px;
   color: var(--foreground);
   margin: 60px;
 }
@@ -32,7 +35,7 @@ h1 {
 a {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-size: 1.2vw;
+  font-size: 15px;
   font-weight: 800;
   color: var(--background2);
 }
@@ -67,18 +70,45 @@ a#list:hover {
   height: 12%;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 900px) {
   #container {
+    margin-top: 60px;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 55%;
   }
 
   h1 {
-    text-align: center;
-    font-size: 8vw;
+    font-size: 7vw;
+    width: 560px;
   }
 
   a {
-    font-size: 4vw;
+    font-size: 2.7vw;
+  }
+
+  a#random,
+  a#list {
+    height: 11%;
+  }
+}
+
+@media (max-width: 500px) {
+  #container {
+    margin-top: 50px;
+    max-width: 100%;
+    max-height: 55%;
+  }
+
+  h1 {
+    font-size: 9vw;
+  }
+
+  a {
+    font-size: 3.9vw;
+  }
+
+  a#random,
+  a#list {
+    height: 13%;
   }
 }
