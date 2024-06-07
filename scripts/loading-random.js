@@ -20,13 +20,13 @@ button.addEventListener("click", () => {
 
       movieName.style.display = "block";
       movieCover.style.display = "block";
-    }, 1100);
+    }, 4000);
   } else {
     loader.style.display = "none";
     loader.style.animation = "none";
 
     setTimeout(() => {
       content.style.display = "none";
-    }, 1100);
+    }, 4000);
   }
 });

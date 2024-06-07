@@ -14,7 +14,7 @@ button.addEventListener("click", () => {
       loader.classList.remove("active");
       loader.style.display = "none";
       movieSorted.style.display = "block";
-    }, 1100);
+    }, 4000);
   } else {
     loader.style.display = "none";
     loader.style.animation = "none";
