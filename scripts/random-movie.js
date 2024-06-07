@@ -8,10 +8,9 @@ async function displayMovie() {
     const movies = data.movies;
     const randomMovie = movies[Math.floor(Math.random() * movies.length)];
 
-    setTimeout(() => {
-      movie.innerHTML = randomMovie.title;
-      cover.src = randomMovie.cover;
-    }, 1000);
+    movie.innerHTML = randomMovie.title;
+    cover.src = randomMovie.cover;
+    // setTimeout(() => {}, 1000);
 
     console.log(randomMovie);
   } catch (error) {
