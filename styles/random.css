@@ -1,75 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import "colorpallete.css";
+@import "style.css";
 
-body {
-  height: 98vh;
-  background-color: var(--background);
-  color: var(--normaltext);
-  text-align: center;
-}
-
-#movie {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%);
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  color: var(--movieTitle);
-}
-
-a {
-  position: absolute;
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  color: var(--background2);
+#container {
+  background-position: center 20%;
 }
 
 a#random {
-  position: absolute;
-  top: -60px;
-  left: 0;
-  height: 60px;
-  width: 50%;
-  background-color: var(--randomtab);
-  border-radius: 14px 0 0 0;
-}
-
-a#list {
-  position: absolute;
-  top: -51px;
-  left: 50%;
-  width: 50%;
-  background-color: var(--listtab);
-  border-radius: 0 14px 0 0;
-}
-
-a#list:hover {
-  top: -60px;
-  height: 60px;
-}
-
-#container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 500px;
-  height: 600px;
-  padding: 16px;
-  border-radius: 0 0 14px 14px;
-  background: var(--background2) url("/covers/undefined.png") no-repeat center
-    center;
-}
-
-#movieCover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  top: -10%;
+  height: 12%;
 }
 
 .button {
@@ -91,6 +30,24 @@ a#list:hover {
   height: 48px;
   font-size: 17px;
   box-shadow: inset 0px 0px 2px black;
+}
+
+#movieCover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#movie {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 18px;
+  color: var(--movieTitle);
 }
 
 .loader {
@@ -115,52 +72,4 @@ a#list:hover {
 
 .content {
   display: none;
-}
-
-@media (max-width: 500px) {
-  #container {
-    max-width: 90%;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 10vw;
-  }
-
-  a {
-    font-size: 4vw;
-  }
-
-  a#random {
-    height: 80px;
-  }
-
-  a#list {
-    height: 71px;
-  }
-
-  a#list:hover {
-    height: 80px;
-  }
-
-  .button {
-    margin-top: 30px;
-    width: 85vw;
-    font-size: 4vw;
-  }
-
-  .button:active {
-    width: 83vw;
-    height: 48px;
-    font-size: 3.9vw;
-  }
-
-  #movieCover {
-    margin-top: 10px;
-    max-width: 65vw;
-  }
-
-  #movie {
-    font-size: 4.7vw;
-  }
 }

@@ -2,9 +2,10 @@
 @import "colorpallete.css";
 
 body {
-  height: 100vh;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   color: var(--normaltext);
   background-color: var(--background);
@@ -25,7 +26,6 @@ body {
 }
 
 h1 {
-  font-family: "Raleway";
   font-weight: 900;
   font-size: 48px;
   color: var(--foreground);
@@ -34,9 +34,8 @@ h1 {
 
 a {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 900;
   color: var(--background2);
 }
 
