@@ -10,7 +10,6 @@ async function displayMovie() {
 
     movie.innerHTML = randomMovie.title;
     cover.src = randomMovie.cover;
-    // setTimeout(() => {}, 1000);
 
     console.log(randomMovie);
   } catch (error) {
