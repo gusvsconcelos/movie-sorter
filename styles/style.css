@@ -16,8 +16,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   /* margin-top: 80px; */
-  width: 450px;
-  height: 500px;
+  width: 430px;
+  height: 480px;
   padding: 16px;
   border-radius: 0 0 14px 14px;
   background: var(--background2) url("/covers/undefined.png") no-repeat center /
