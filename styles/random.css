@@ -96,30 +96,30 @@
     background-color: var(--randomtab);
     color: var(--background2);
     font-family: "Raleway", sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 800;
   }
 
   .button:active {
     box-shadow: inset 0px 0px 4px black;
-    font-size: 0.98em;
+    font-size: 1.17em;
   }
 
   #movieCover {
     position: absolute;
-    top: 54%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 55%;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   }
 
   #movie {
     position: absolute;
-    top: 87%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%);
-    font-size: 18px;
+    font-size: 1.5em;
     color: var(--movieTitle);
   }
 }

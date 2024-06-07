@@ -15,6 +15,8 @@ function addMovie() {
 
   if (movie.value === "") {
     return (result.innerHTML = "Adicione um filme");
+  } else {
+    result.innerHTML = `${movie.value} adicionado.`;
   }
 
   if (!inList(movie.value, movieList)) {

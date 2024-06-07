@@ -71,6 +71,7 @@
 
   body {
     height: 100vh;
+    overflow: hidden;
     font-family: "Raleway", sans-serif;
     text-align: center;
   }
