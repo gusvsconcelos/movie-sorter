@@ -15,7 +15,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 30px;
+  margin-top: 25px;
   width: 430px;
   height: 480px;
   padding: 16px;
@@ -68,47 +68,4 @@ a#random:hover {
 a#list:hover {
   top: -10%;
   height: 12%;
-}
-
-@media (max-width: 900px) {
-  #container {
-    margin-top: 60px;
-    max-width: 100%;
-    max-height: 55%;
-  }
-
-  h1 {
-    font-size: 7vw;
-    width: 560px;
-  }
-
-  a {
-    font-size: 2.7vw;
-  }
-
-  a#random,
-  a#list {
-    height: 11%;
-  }
-}
-
-@media (max-width: 500px) {
-  #container {
-    margin-top: 50px;
-    max-width: 100%;
-    max-height: 55%;
-  }
-
-  h1 {
-    font-size: 9vw;
-  }
-
-  a {
-    font-size: 3.9vw;
-  }
-
-  a#random,
-  a#list {
-    height: 13%;
-  }
 }
