@@ -3,7 +3,6 @@ const submit = document.querySelector("#submit");
 const loader = document.querySelector(".loader");
 const movieSorted = document.querySelector("#result");
 const input = document.querySelector("#movieName");
-const list = document.querySelector("#movieList");
 
 button.addEventListener("click", () => {
   if (loader.style.display === "none" || loader.style.display === "") {

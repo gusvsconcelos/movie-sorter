@@ -45,6 +45,7 @@ function submitMovie() {
   });
 }
 
+// eslint-disable-next-line no-unused-vars
 function sortMovie() {
   const randomFilm = movieList[Math.floor(Math.random() * movieList.length)];
   if (randomFilm != undefined) {

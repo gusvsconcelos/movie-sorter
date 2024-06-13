@@ -1,6 +1,7 @@
 const movie = document.getElementById("movie");
 const cover = document.getElementById("movieCover");
 
+// eslint-disable-next-line no-unused-vars
 async function displayMovie() {
   try {
     const response = await fetch("movies.json");

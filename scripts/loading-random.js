@@ -24,9 +24,5 @@ button.addEventListener("click", () => {
   } else {
     loader.style.display = "none";
     loader.style.animation = "none";
-
-    setTimeout(() => {
-      content.style.display = "none";
-    }, 5000);
   }
 });
