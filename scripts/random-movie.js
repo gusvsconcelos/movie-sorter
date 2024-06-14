@@ -4,7 +4,7 @@ const cover = document.getElementById("movieCover");
 // eslint-disable-next-line no-unused-vars
 async function displayMovie() {
   try {
-    const response = await fetch("movies.json");
+    const response = await fetch("data/movies.json");
     const data = await response.json();
     const movies = data.movies;
     const randomMovie = movies[Math.floor(Math.random() * movies.length)];

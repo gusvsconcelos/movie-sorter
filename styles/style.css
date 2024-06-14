@@ -22,8 +22,8 @@
     height: 480px;
     padding: 16px;
     border-radius: 0 0 14px 14px;
-    background: var(--background2) url("/covers/undefined.png") no-repeat center /
-      50%;
+    background: var(--background2) url("../data/covers/undefined.png") no-repeat
+      center / 50%;
   }
 
   h1 {
