@@ -227,6 +227,66 @@
     {
       "title": "Come and See",
       "cover": "./data/covers/come-and-see.jpeg"
+    },
+    {
+      "title": "Raging Bull",
+      "cover": "./data/covers/raging-bull.jpeg"
+    },
+    {
+      "title": "Disco Pigs",
+      "cover": "./data/covers/disco-pigs.jpeg"
+    },
+    {
+      "title": "The Rover",
+      "cover": "./data/covers/the-rover.jpeg"
+    },
+    {
+      "title": "High Life",
+      "cover": "./data/covers/high-life.jpeg"
+    },
+    {
+      "title": "Cure",
+      "cover": "./data/covers/cure.jpeg"
+    },
+    {
+      "title": "Lady Snowblood",
+      "cover": "./data/covers/lady-snowblood.jpeg"
+    },
+    {
+      "title": "The State I Am In",
+      "cover": "./data/covers/the-state-i-am-in.jpeg"
+    },
+    {
+      "title": "The Turin Horse",
+      "cover": "./data/covers/the-turin-horse.jpeg"
+    },
+    {
+      "title": "Waves",
+      "cover": "./data/covers/waves.jpeg"
+    },
+    {
+      "title": "Les Misérables",
+      "cover": "./data/covers/les-miserables.jpeg"
+    },
+    {
+      "title": "Cabeça de Nêgo",
+      "cover": "./data/covers/cabeca-de-nego.jpeg"
+    },
+    {
+      "title": "Monkey Man",
+      "cover": "./data/covers/monkey-man.jpeg"
+    },
+    {
+      "title": "All of Us Strangers",
+      "cover": "./data/covers/all-of-us-strangers.jpeg"
+    },
+    {
+      "title": "Vertigo",
+      "cover": "./data/covers/vertigo.jpeg"
+    },
+    {
+      "title": "Comrades, Almost a Love Story",
+      "cover": "./data/covers/comrades-almost-a-love-story.jpeg"
     }
   ]
 }

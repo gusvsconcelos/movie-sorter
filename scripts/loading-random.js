@@ -20,7 +20,7 @@ button.addEventListener("click", () => {
 
       movieName.style.display = "block";
       movieCover.style.display = "block";
-    }, 5000);
+    }, 000);
   } else {
     loader.style.display = "none";
     loader.style.animation = "none";
