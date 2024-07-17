@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import "colorpallete.css";
-@import "style.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'colorpallete.css';
+@import 'style.css';
 
 @media (min-width: 500px) {
   #container {
@@ -21,7 +21,7 @@
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
     background-color: var(--randomtab);
     color: var(--background2);
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 800;
   }
@@ -95,7 +95,7 @@
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
     background-color: var(--randomtab);
     color: var(--background2);
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.25em;
     font-weight: 800;
   }

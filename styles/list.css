@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import "colorpallete.css";
-@import "style.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'colorpallete.css';
+@import 'style.css';
 
 @media (min-width: 500px) {
   #container {
@@ -45,7 +45,7 @@
     border-radius: 6px;
     background-color: var(--listtab);
     color: var(--background2);
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 13px;
     font-weight: 800;
   }
@@ -62,7 +62,7 @@
     border-radius: 6px;
     background-color: var(--listtab);
     color: var(--background2);
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 800;
   }
@@ -81,7 +81,7 @@
     padding: 14px;
     border-radius: 6px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight: 800;
     text-transform: uppercase;
@@ -140,7 +140,7 @@
     border-radius: 4px;
     background-color: var(--listtab);
     color: var(--background2);
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 0.8em;
     font-weight: 800;
   }
@@ -172,7 +172,7 @@
     border-radius: 4px;
     background-color: var(--listtab);
     color: var(--background2);
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
     font-weight: 800;
   }
@@ -192,7 +192,7 @@
     padding: 20px 0 20px 0;
     border-radius: 4px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
     font-weight: 800;
     overflow-wrap: break-word;

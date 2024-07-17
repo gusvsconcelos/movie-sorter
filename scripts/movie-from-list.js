@@ -1,6 +1,6 @@
 let movieList = [];
-let result = document.getElementById("result");
-const movie = document.getElementById("movieName");
+let result = document.getElementById('result');
+const movie = document.getElementById('movieName');
 
 function inList(m, l) {
   if (l.indexOf(m) != -1) {
@@ -11,16 +11,16 @@ function inList(m, l) {
 }
 
 function addMovie() {
-  const list = document.getElementById("movieList");
+  const list = document.getElementById('movieList');
 
-  if (movie.value === "") {
-    return (result.innerHTML = "Adicione um filme");
+  if (movie.value === '') {
+    return (result.innerHTML = 'Adicione um filme');
   } else {
     result.innerHTML = `${movie.value} adicionado.`;
   }
 
   if (!inList(movie.value, movieList)) {
-    const item = document.createElement("option");
+    const item = document.createElement('option');
 
     movieList.push(movie.value);
 
@@ -30,17 +30,17 @@ function addMovie() {
     }
     console.log(movieList);
   } else {
-    result.innerHTML = "Filme já presente na lista";
+    result.innerHTML = 'Filme já presente na lista';
   }
-  movie.value = "";
+  movie.value = '';
   movie.focus();
 }
 
 function submitMovie() {
-  movie.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
+  movie.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
       addMovie();
-      movie.value = "";
+      movie.value = '';
     }
   });
 }
@@ -51,7 +51,7 @@ function sortMovie() {
   if (randomFilm != undefined) {
     result.innerHTML = randomFilm;
   } else {
-    result.innerHTML = "Lista vazia";
+    result.innerHTML = 'Lista vazia';
   }
 }
 
@@ -59,4 +59,4 @@ function functionLoader() {
   submitMovie();
 }
 
-window.addEventListener("load", functionLoader, true);
+window.addEventListener('load', functionLoader, true);

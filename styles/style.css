@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import "colorpallete.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'colorpallete.css';
 
 @media (min-width: 500px) {
   body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     color: var(--normaltext);
     background-color: var(--background);
@@ -22,7 +22,7 @@
     height: 480px;
     padding: 16px;
     border-radius: 0 0 14px 14px;
-    background: var(--background2) url("../data/covers/undefined.png") no-repeat
+    background: var(--background2) url('../data/covers/undefined.png') no-repeat
       center / 50%;
   }
 
@@ -72,14 +72,14 @@
   body {
     height: 100vh;
     overflow: hidden;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
   }
 
   #container {
     height: 100%;
     width: 100%;
-    background: var(--background2) url("/covers/undefined.png") no-repeat center /
+    background: var(--background2) url('/covers/undefined.png') no-repeat center /
       65%;
   }
 
